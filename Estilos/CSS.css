@@ -1,0 +1,285 @@
+/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+nav, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    color: black;
+}
+a:hover{
+    opacity: 1;
+}
+/* RESET */
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #FFF;
+}
+header img{
+    width: 200px;
+}
+header nav{
+    display: flex;
+}
+header li a{
+    color: #191C03;
+}
+header li{
+    margin: 0 15px;
+}
+header li:first-child{
+    margin-left: 0;
+}
+header li:last-child{
+    margin-right: 0;
+}
+@media(max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 15px;
+    }
+}
+/* BG */
+.hero{
+    background-image: url(../Imagens/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+.hero h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.hero .btn{
+    background-color: #FFF;
+    border-radius: 4px;
+    color: #191C03;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+@media (max-width: 700px){
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .hero h3{
+        font-size: 1.5rem;
+    }
+}
+/* CONHEÇA O HOTEL */
+.conheca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background: #fff;
+}
+.conheca h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #000;
+}
+.conheca p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #000;
+    text-align: center;
+}
+.conheca hr{
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: auto;
+    border: none;
+}
+.coll .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.coll .grid li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.coll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(53,69,67,1) 100%);
+}
+.coll .grid li.small{
+    flex-basis: 40%;
+}
+.coll .grid li.large{
+    flex-basis: 60%;
+}
+@media (max-width: 700px){
+    .coll .grid li.small, .coll .grid li.large{
+        flex-basis: 100%;
+    }
+}
+/* CARACTERÍSTICAS */
+.conheca.car{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background: #191C03;
+}
+.conheca.car h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #FFF;
+}
+.conheca.car p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #FFF;
+    text-align: center;
+}
+.conheca.car hr{
+    width: 200px;
+    height: 2px;
+    background-color: #FFF;
+    margin-bottom: auto;
+    border: none;
+}
+.conheca.car .grid{
+    width: 100;
+    display: flex;
+    margin-top: 70px;
+}
+.conheca.car .grid li{
+    padding: 0 30px;
+    text-align: center;
+}
+.conheca.car .grid li i{
+    color: #C3C63B;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.conheca.car .grid li h4{
+    font-size: 1.5rem;
+    color: #C3C63B;
+    margin-bottom: 30px;
+}
+.conheca.car .grid li p{
+    color: #FFF;
+}
+@media (max-width: 850px){
+    .conheca.car .grid{
+        flex-direction: column;
+    }
+}
+
+/*NEWSLETTER*/
+.conheca.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background: #FFF;
+    padding: 100px 50px;
+}
+.conheca.news h3{
+    color: #C3C63B;
+}
+.conheca.news p{
+    color: #C3C63B;
+}
+.conheca.news hr{
+    background-color: #C3C63B;
+    height: 2px;
+}
+.conheca.news form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+    font: inherit;
+    margin-top: 60px;
+}
+.conheca.news input{
+    padding: 15px;
+    border: 1px solid #C3C63B;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+}
+.conheca.news button{
+    padding: 15px;
+    background-color: #C3C63B;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    .conheca.news input{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/*RODAPÉ*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #191C03;
+    padding: 50px 0;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+}
+footer ul li{
+    margin-right: 10px;
+}
+footer ul li:last-child{
+    margin-right: 0;
+}
+footer ul li a{
+    color: #C3C63B;
+    font-size: 2rem;
+}
+footer p{
+    color: #C3C63B;
+}
